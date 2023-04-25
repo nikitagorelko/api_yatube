@@ -8,7 +8,9 @@ router = DefaultRouter()
 router.register('posts', PostViewSet)
 router.register('groups', GroupViewSet)
 router.register(
-    r'posts/(?P<post_id>\d+)/comments', CommentViewSet, basename='comments',
+    r'posts/(?P<post_id>\d+)/comments',
+    CommentViewSet,
+    basename='comments',
 )
 
 urlpatterns = [
